@@ -31,6 +31,12 @@
         </mrow>
     </xsl:template>
 
+    <xsl:template match="число">
+        <mn><xsl:apply-templates/></mn>
+    </xsl:template>
 
+    <xsl:template match="дробь">
+        <mfrac><xsl:apply-templates/></mfrac>
+    </xsl:template>
 </xsl:stylesheet>
 
