@@ -43,5 +43,12 @@
         <munderover><xsl:apply-templates/></munderover>
     </xsl:template>
 
+    <xsl:template match="верх">
+        <msup><xsl:apply-templates/></msup>
+    </xsl:template>
+
+    <xsl:template match="низ">
+        <msub><xsl:apply-templates/></msub>
+    </xsl:template>
 </xsl:stylesheet>
 
