@@ -13,5 +13,9 @@
             </body>
         </html>
     </xsl:template>
+
+    <xsl:template match="строка">
+        <mraw><xsl:value-of select="."/></mraw>
+    </xsl:template>
 </xsl:stylesheet>
 
