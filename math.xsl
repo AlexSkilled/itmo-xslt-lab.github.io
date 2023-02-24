@@ -14,7 +14,7 @@
     </xsl:template>
 
     <xsl:template match="операнд">
-        <mi><xsl:apply-templates select="."/></mi>
+        <mi><xsl:apply-templates/></mi>
     </xsl:template>
 
     <xsl:template match="оператор">
