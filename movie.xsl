@@ -1,19 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <xsl:template match="/collection">
+    <xsl:template match="/">
         <html>
             <body>
+                <h2>Family</h2>
                 <table border="1">
-                    <tr>
-                        <th>Title</th>
-                        <th>Genre</th>
-                        <th>Year</th>
+                    <tr bgcolor="#9acd32">
+                        <th>Role</th>
+                        <th>Name</th>
+                        <th>Age</th>
                     </tr>
-                    <xsl:for-each select="movie">
+                    <xsl:for-each select="family/person">
                         <tr>
-                            <td><xsl:value-of select="title"/></td>
-                            <td><xsl:value-of select="genre"/></td>
-                            <td><xsl:value-of select="year"/></td>
+                            <td><xsl:value-of select="role"/></td>
+                            <td><xsl:value-of select="name"/></td>
+                            <td><xsl:value-of select="age"/></td>
                         </tr>
                     </xsl:for-each>
                 </table>
