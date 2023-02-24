@@ -8,14 +8,20 @@
             </head>
             <body>
                 <math xmlns = "http://www.w3.org/1998/Math/MathML">
-                    <xsl:value-of select="."/>
+                        <xsl:apply-templates select="строка"/>
                 </math>
             </body>
         </html>
     </xsl:template>
 
     <xsl:template match="строка">
-        <mraw><xsl:value-of select="."/></mraw>
+        <mraw>
+            <xsl:apply-templates select="операнд"/>
+        </mraw>
+    </xsl:template>
+
+    <xsl:template match="операнд">
+        <mi><xsl:value-of select="."/></mi>
     </xsl:template>
 </xsl:stylesheet>
 
