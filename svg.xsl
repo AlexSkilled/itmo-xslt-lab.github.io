@@ -41,6 +41,10 @@
             <xsl:attribute name="rx">
                 <xsl:value-of select="@rx"/>
             </xsl:attribute>
+
+            <xsl:attribute name="style">
+                fill:<xsl:value-of select="@заливка"/>
+            </xsl:attribute>
         </ellipse>
     </xsl:template>
 
