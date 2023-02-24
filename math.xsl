@@ -23,5 +23,10 @@
     <xsl:template match="операнд">
         <mi><xsl:value-of select="."/></mi>
     </xsl:template>
+
+    <xsl:template match="оператор">
+        <mo><xsl:value-of select="."/></mo>
+    </xsl:template>
+
 </xsl:stylesheet>
 
