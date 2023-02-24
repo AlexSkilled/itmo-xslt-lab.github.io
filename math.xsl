@@ -13,10 +13,5 @@
             </body>
         </html>
     </xsl:template>
-
-    <xsl:template match="*строка*">
-        <mrow><xsl:value-of select="."/></mrow>
-    </xsl:template>
-
 </xsl:stylesheet>
 
