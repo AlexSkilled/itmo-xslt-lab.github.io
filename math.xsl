@@ -13,12 +13,5 @@
             </body>
         </html>
     </xsl:template>
-
-<xsl:template match="*строка*">
-    <mrow>
-        a
-    </mrow>
-
-</xsl:template>
 </xsl:stylesheet>
 
