@@ -8,7 +8,7 @@
             </head>
             <body>
                 <math xmlns = "http://www.w3.org/1998/Math/MathML">
-                        <xsl:apply-templates select="строка"/>
+                        <xsl:apply-templates select="//строка"/>
                 </math>
             </body>
         </html>
