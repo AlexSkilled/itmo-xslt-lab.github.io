@@ -15,6 +15,12 @@
         <msqrt><xsl:value-of select="./text()"/></msqrt>
     </xsl:template>
 
+    <xsl:template match="строка">
+        <mrow>
+            <xsl:value-of select="."/>
+        </mrow>
+    </xsl:template>
+
     <xsl:template match="/">
         <html>
             <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"/>
@@ -27,12 +33,5 @@
             </body>
         </html>
     </xsl:template>
-
-    <xsl:template match="строка">
-        <mrow>
-            <xsl:value-of select="."/>
-        </mrow>
-    </xsl:template>
-
 </xsl:stylesheet>
 
