@@ -2,23 +2,26 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
         <html>
-            <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"/>
+            <script type="text/javascript"
+                    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"/>
             <head>
             </head>
             <body>
-                    <xsl:apply-templates/>
+                <xsl:apply-templates/>
             </body>
         </html>
     </xsl:template>
 
     <xsl:template match="root">
-        <mi><xsl:apply-templates/></mi>
+        <mi>
+            <xsl:apply-templates/>
+        </mi>
     </xsl:template>
 
     <xsl:template match="графика">
-        <svg >
+        <svg>
             <xsl:attribute name="width">
-                <xsl:value-of select="@ширина"></xsl:value-of>
+                <xsl:value-of select="@ширина"/>
             </xsl:attribute>
             <xsl:apply-templates/>
         </svg>
