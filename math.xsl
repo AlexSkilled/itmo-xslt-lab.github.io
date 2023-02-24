@@ -38,5 +38,10 @@
     <xsl:template match="дробь">
         <mfrac><xsl:apply-templates/></mfrac>
     </xsl:template>
+
+    <xsl:template match="низверх">
+        <munderover><xsl:apply-templates/></munderover>
+    </xsl:template>
+
 </xsl:stylesheet>
 
