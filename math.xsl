@@ -18,6 +18,7 @@
         <mrow>
             <xsl:apply-templates select="//операнд"/>
             <xsl:apply-templates select="//оператор"/>
+            <xsl:apply-templates select="//корень"/>
         </mrow>
     </xsl:template>
 
@@ -28,6 +29,11 @@
     <xsl:template match="оператор">
         <mo><xsl:value-of select="."/></mo>
     </xsl:template>
+
+    <xsl:template match="корень">
+        <msqrt><xsl:value-of select="."/></msqrt>
+    </xsl:template>
+
 
 </xsl:stylesheet>
 
