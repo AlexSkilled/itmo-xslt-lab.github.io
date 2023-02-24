@@ -2,13 +2,14 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
     <xsl:template match="/">
+
         <html>
             <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"/>
             <head>
             </head>
             <body>
                 <math xmlns = "http://www.w3.org/1998/Math/MathML">
-                    <mrow>abc</mrow>
+                    <mrow><mi>a</mi></mrow>
                 </math>
             </body>
         </html>
