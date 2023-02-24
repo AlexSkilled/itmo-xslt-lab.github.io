@@ -7,27 +7,27 @@
             </head>
             <body>
                 <math xmlns = "http://www.w3.org/1998/Math/MathML">
-                    <xsl:value-of select="./text()"/>
+                    <xsl:apply-templates select="."/>
                 </math>
             </body>
         </html>
     </xsl:template>
 
     <xsl:template match="операнд">
-        <mi><xsl:value-of select="."/></mi>
+        <mi><xsl:apply-templates select="."/></mi>
     </xsl:template>
 
     <xsl:template match="оператор">
-        <mo><xsl:value-of select="."/></mo>
+        <mo><xsl:apply-templates select="."/></mo>
     </xsl:template>
 
     <xsl:template match="корень">
-        <msqrt><xsl:value-of select="./text()"/></msqrt>
+        <msqrt><xsl:apply-templates select="."/></msqrt>
     </xsl:template>
 
     <xsl:template match="строка">
         <mrow>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="."/>
         </mrow>
     </xsl:template>
 
