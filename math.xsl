@@ -15,9 +15,9 @@
     </xsl:template>
 
     <xsl:template match="строка">
-        <mraw>
-            <xsl:apply-templates select="операнд"/>
-        </mraw>
+        <mrow>
+            <xsl:apply-templates select="//операнд"/>
+        </mrow>
     </xsl:template>
 
     <xsl:template match="операнд">
