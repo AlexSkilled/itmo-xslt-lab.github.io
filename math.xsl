@@ -17,6 +17,7 @@
     <xsl:template match="строка">
         <mrow>
             <xsl:apply-templates select="//операнд"/>
+            <xsl:apply-templates select="//оператор"/>
         </mrow>
     </xsl:template>
 
