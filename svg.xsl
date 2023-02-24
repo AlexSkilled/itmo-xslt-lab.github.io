@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:template match="/">
+    <xsl:template match="/root">
         <html>
             <script type="text/javascript"
                     src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"/>
@@ -10,12 +10,6 @@
                 <xsl:apply-templates/>
             </body>
         </html>
-    </xsl:template>
-
-    <xsl:template match="root">
-        <mi>
-            <xsl:apply-templates/>
-        </mi>
     </xsl:template>
 
     <xsl:template match="графика">
