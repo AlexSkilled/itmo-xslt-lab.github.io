@@ -8,16 +8,16 @@
             </head>
             <body>
                 <math xmlns = "http://www.w3.org/1998/Math/MathML">
-                    <xsl:template match="/строка">
-                        <mrow>
-                           a
-                        </mrow>
 
-                    </xsl:template>
                 </math>
             </body>
         </html>
     </xsl:template>
+<xsl:template match="/строка">
+    <mrow>
+        a
+    </mrow>
 
+</xsl:template>
 </xsl:stylesheet>
 
