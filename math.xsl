@@ -8,22 +8,16 @@
             </head>
             <body>
                 <math xmlns = "http://www.w3.org/1998/Math/MathML">
-                    <mrow>
-                        <msup> <mi>x</mi> <mn>2</mn> </msup> <mo>+</mo>
-                        <mrow>
-                            <mn>4</mn>
-                            <mi>x</mi>
-                        </mrow>
-                        <mo>+</mo>
-                        <mn>4</mn>
-                    </mrow>
-
-                    <mo>=</mo>
-                    <mn>0</mn>
+                    <xsl:value-of select="/"/>
                 </math>
             </body>
         </html>
     </xsl:template>
+<xsl:template match="строка">
+    <mrow>
+        <xsl:value-of select="строка"/>
+    </mrow>
 
+</xsl:template>
 </xsl:stylesheet>
 
