@@ -44,8 +44,10 @@
 
             <xsl:attribute name="style">
                 fill:<xsl:value-of select="@заливка"/>;
-                stroke:<xsl:value-of select="@ободок"/>
+                stroke:<xsl:value-of select="@ободок"/>;
+                stroke-width:<xsl:value-of select="@ширина-ободка"/>
             </xsl:attribute>
+
         </ellipse>
     </xsl:template>
 
