@@ -43,7 +43,8 @@
             </xsl:attribute>
 
             <xsl:attribute name="style">
-                fill:<xsl:value-of select="@заливка"/>
+                fill:<xsl:value-of select="@заливка"/>;
+                stroke:<xsl:value-of select="@ободок"/>
             </xsl:attribute>
         </ellipse>
     </xsl:template>
